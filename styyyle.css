@@ -1,60 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-/* font-family: 'Fredoka One', cursive; */
-/* font-family: 'Amatic SC', cursive; */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
- body{
-    overflow-x: hidden;
-   
- }
- .contenar{
-     display: flex;
-     justify-content: center;
- }
-
-.slider{
-    display: none;
-    
-}
- img{
-     text-align: center;
-    width: auto;
-    position: relative;
-    margin:0 auto;
-}
-p{
-    position: absolute;
-    top: 27rem;
-    font-size: 3rem;
-    background: rgba(0, 0, 0, 0.418);
-    width: auto;
-    text-align: center;
-    color: aqua;
-    text-transform: uppercase;
-}
-.arr{
-    position: absolute;
-    top: 13rem;
-    color: aqua;
-    display: flex;
-    justify-content: space-between;
-
-   
-}
-.arrow{
-    background: white;
-    font-size: 2.6rem;
-    padding: 1rem;
-    cursor: pointer;
-   
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Fira Code", monospace;
 }
 
+body {
+  background-color: #06323f;
+}
 
- /* @media only screen and (max-width: 500px) {
-    
-}  */
+/* re-useble style */
+.cl {
+  background-color: #ffde00;
+}
+
+/* screen con */
+.con {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+/* style start */
+.zull {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.secNd__Bra__line.cl {
+  width: 26px;
+  height: 160px;
+  border-radius: 11px;
+  position: relative;
+  top: 0;
+}
+
+.secNd__Bra__round.cl {
+  height: 26px;
+  width: 36px;
+  position: absolute;
+  left: 8px;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+.secNd__Bra.left {
+  position: relative;
+  transform: scaleX(1);
+}
+.secNd__Bra.right {
+  position: relative;
+  transform: scaleX(-1);
+}
+.secNd__Bra__round.cl.bottom {
+  bottom: 0px;
+}
+
+.secNd__Bra__round.cl.bottom {
+  bottom: 0px;
+}
+
+.secNd__Bra:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 114.9px;
+  top: 22.5px;
+  border-top-left-radius: 11px;
+  left: 23px;
+  border-bottom-left-radius: 11px;
+  background: #06323f;
+}
+
+.secNd__Bra:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 45px;
+  background: aliceblue;
+  left: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #ffde00;
+}
+
+/* zull s */
+.zull__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.zulls__con {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blate__of__zull.cl {
+  width: 30px;
+  height: 120px;
+  position: relative;
+}
+
+.prevender__of__zull.cl {
+  width: 80px;
+  height: 20px;
+}
+
+.hendel__of__zull.cl {
+  width: 20px;
+  height: 40px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.blate__of__zull.cl:before {
+  content: "";
+
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  top: -11.8px;
+  border-right: 15px solid transparent;
+  position: absolute;
+  border-bottom: 12px solid #ffde00;
+}
+
+.zull__item.left {
+  transform: rotate(39deg);
+  position: relative;
+  top: 0px;
+  left: 32px;
+}
+
+.zull__item.right {
+  transform: rotate(319deg);
+  position: relative;
+  top: 0px;
+  left: -32px;
+}
+.zull__item.left .blate__of__zull.cl:after {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 55%;
+  background: #06323f;
+  z-index: 999;
+  top: 32px;
+  left: -1px;
+}
+footer {
+  color: aliceblue;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
